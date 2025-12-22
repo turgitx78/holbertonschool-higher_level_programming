@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-str1 = "Holberton School"
-str2 = "Python"
-str3 = str1[:9] + " " + str1[10:]
-print(f"{str3} programming with {str2}")
+str1 = "object-oriented programming with Python"
+str2 = str1[:6]
+str3 = str1[7:30]
+print(str2 + str3)

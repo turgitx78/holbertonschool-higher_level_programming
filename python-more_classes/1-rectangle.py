@@ -30,4 +30,5 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, val
+    def height(self, value):
+        """Set the hei

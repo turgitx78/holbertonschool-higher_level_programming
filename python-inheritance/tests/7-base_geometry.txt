@@ -1,0 +1,2 @@
+Tests for BaseGeometry.integer_validator
+

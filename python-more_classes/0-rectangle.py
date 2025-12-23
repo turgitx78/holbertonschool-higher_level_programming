@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Boş Rectangle sinfini təyin edir"""
+"""Defines a Rectangle class"""
 
 
 class Rectangle:
+    """Empty class that defines a rectangle"""
     pass

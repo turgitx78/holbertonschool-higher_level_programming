@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Products</title>
+</head>
+<body>
+    {% include "header.html" %}
+
+    <h1>Products</h1>
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <table border="1" cellpadding="6">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for p in products %}
+                    <tr>
+                        <td>{{ p.name or p["name"] }}</td>
+                        <td>{{ p.category or p["category"] }}</td>
+                        <td>{{ p.price or p["price"] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+
+    {% include "footer.html" %}
+</body>
+</html>
